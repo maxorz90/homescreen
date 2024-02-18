@@ -1,17 +1,74 @@
+html {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+
 body {
   background-color: #1b1f30;
   color: #Cbc2e0;
   font-family: 'Fira Code', monospace;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }
 
 a {
   color: #6ad7eb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #c0caf5;
+}
+
+h1 {
+  font-size: 48px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 h2 {
   text-decoration: bold;
+  font-size: 32px;
+  margin-bottom: 40px;
 }
 
-div, h1 {
+ul {
+  list-style: none;
+  margin-left: -40px;
+}
+
+h1,
+div {
   color: #ff9e64;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+  width: 600px;
+}
+
+#last-row {
+  grid-column: 1/ span 2;
+  /* text-align: center; */
+  width: 100%;
+}
+
+img {
+  height: 700px;
+  width: 400px;
+  object-fit: cover;
+  margin-right: 4em;
+  box-shadow: rgba(0, 0, 0, 0.20) 30px 30px 30px, rgba(0, 0, 0, 0.20) 0px 0px 30px 10px;
+}
+
+#date {
+  color: #c0caf5;
 }
