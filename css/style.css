@@ -11,7 +11,16 @@ body {
   font-family: 'Fira Code', monospace;
   display: flex;
   align-items: center;
-  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+image,
+bookmarks {
+  flex: 1;
+}
+
+.hidden-on-small {
+  display: block;
 }
 
 a {
@@ -46,13 +55,12 @@ div {
   color: #ff9e64;
 }
 
-
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, auto);
   gap: 20px;
-  width: 600px;
+  max-width: 600px;
 }
 
 #last-row {
@@ -70,13 +78,36 @@ img {
   margin-bottom: 20px;
 }
 
-
 #date {
   color: #c0caf5;
+  max-width: 100%;
+  overflow-wrap: wrap;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
 }
 
 #image-source,
 #image-source a {
   color: #c0caf5;
   padding-top: 20px;
+}
+
+@media (max-width: 600px) {
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  h1,
+  h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width:1200px) {
+  .hidden-on-small {
+    display: none;
+  }
 }
