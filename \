@@ -15,9 +15,7 @@
 <body>
   <div class="image">
     <img src="img/2b.jpg" />
-    <br />
-    <span id="image-source">Image source: <a
-        href="https://www.deviantart.com/artgerm/art/2B-662254318">Artgerm</a></span>
+    Image source: <a href="https://www.deviantart.com/artgerm/art/2B-662254318">Artgerm</a>
   </div>
 
   <div>
