@@ -14,11 +14,11 @@ body {
   flex-wrap: wrap;
 }
 
-image,
-bookmarks {
+.image,
+.bookmarks {
   flex: 1;
 }
- image {
+ .image {
   border-radius: 10px;
  }
 
