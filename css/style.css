@@ -14,14 +14,6 @@ body {
   flex-wrap: wrap;
 }
 
-image,
-bookmarks {
-  flex: 1;
-}
- image {
-  border-radius: 10px;
- }
-
 .hidden-on-small {
   display: block;
 }
@@ -79,6 +71,7 @@ img {
   margin-right: 4em;
   box-shadow: rgba(0, 0, 0, 0.20) 30px 30px 30px, rgba(0, 0, 0, 0.20) 0px 0px 30px 10px;
   margin-bottom: 20px;
+  border-radius: 10px;
 }
 
 #date {
