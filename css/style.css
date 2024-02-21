@@ -18,6 +18,9 @@ image,
 bookmarks {
   flex: 1;
 }
+ image {
+  border-radius: 10px;
+ }
 
 .hidden-on-small {
   display: block;
