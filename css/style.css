@@ -83,6 +83,10 @@ img {
   text-overflow: clip;
 }
 
+.image img {
+  content: var(--image);
+}
+
 #image-source,
 #image-source a {
   color: var(--text-color-secondary);
