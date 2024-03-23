@@ -1,0 +1,9 @@
+:root {
+  --background-color: #1e2030;
+  --text-color-primary: #cad3f5;
+  --text-color-secondary: #a6da95;
+  --link-color-hover: #ee99a0;
+  --link-color-normal: #91d7e3;
+  --title-color: #ee99a0;
+  --image: url("../img/2b.jpg");
+}
