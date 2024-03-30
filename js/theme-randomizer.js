@@ -29,7 +29,7 @@ function createLinkElement(theme){
 
 function createImageSource(name, src){
   var domElement = document.getElementById("image-source");
-  domElement.innerHTML = `Image source: <a href="${src}">${name}</a>`;
+  domElement.innerHTML = `Image credit: <a href="${src}">${name}</a>`;
 }
 
 getRandomTheme();
