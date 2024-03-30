@@ -46,8 +46,12 @@ h2 {
 
 ul {
   list-style: none;
-  margin-left: -22px;
+  margin-left: -23px;
   margin-top: 0;
+}
+
+li {
+  margin: 0px;
 }
 
 h1 {
@@ -87,7 +91,7 @@ img {
 #date {
   color: var(--text-color-secondary);
   max-width: 100%;
-  width: 480px;
+  width: 490px;
   overflow-wrap: wrap;
   white-space: normal;
   overflow: visible;
@@ -98,12 +102,11 @@ img {
   content: var(--image);
 }
 
-#image-source,
-#image-source a {
+#image-source {
   color: var(--text-color-secondary);
   padding-top: 0px;
-  margin-top: -20px;
-  margin-left: 6px;
+  margin-left: -61px;
+  text-align: center;
 }
 
 @media (max-width: 600px) {

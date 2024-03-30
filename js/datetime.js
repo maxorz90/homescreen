@@ -6,7 +6,7 @@ function showTime() {
   let minute = date.toLocaleString("en", { minute: "2-digit" });
   let second = date.toLocaleString("en", { second: "2-digit" });
   let day = date.toLocaleString("en", { day: "2-digit" });
-  let month = date.toLocaleString("en", { month: "long" });
+  let month = date.toLocaleString("en", { month: "short" });
   let year = date.toLocaleString("en", { year: "numeric" });
 
   document.getElementById("date")
