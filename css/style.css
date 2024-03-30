@@ -45,9 +45,13 @@ ul {
   margin-left: -40px;
 }
 
-h1,
-div {
+h1 {
   color: var(--title-color);
+}
+
+div {
+  color: var(--category-color);
+  font-weight: 900;
 }
 
 .grid-container {
