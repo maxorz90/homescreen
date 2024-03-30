@@ -1,4 +1,3 @@
-// const themes = [ 'maki', '2b' ];
 const theme_array = [
   {
     name: 'maki',
@@ -12,8 +11,14 @@ const theme_array = [
   },
 ]
 
-function createLinkElement(theme){
+function getRandomTheme() {
+  const number = Math.floor(Math.random() * theme_array.length);
+  const themeIndex = theme_array[number];
+  createLinkElement(themeIndex.name);
+  createImageSource(themeIndex.image_source_name, themeIndex.image_source_link);
+}
 
+function createLinkElement(theme){
   let head = document.getElementsByTagName('HEAD')[0];
   let link = document.createElement('link');
   link.rel = 'stylesheet';
@@ -24,15 +29,7 @@ function createLinkElement(theme){
 
 function createImageSource(name, src){
   var domElement = document.getElementById("image-source");
-  // console.log(domElement);
   domElement.innerHTML = `Image source: <a href="${src}">${name}</a>`;
-}
-
-function getRandomTheme() {
-  const number = Math.floor(Math.random() * theme_array.length);
-  const themeIndex = theme_array[number];
-  createLinkElement(themeIndex.name);
-  createImageSource(themeIndex.image_source_name, themeIndex.image_source_link);
 }
 
 getRandomTheme();

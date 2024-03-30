@@ -6,11 +6,11 @@ function showTime() {
   let minute = date.toLocaleString("en", { minute: "2-digit" });
   let second = date.toLocaleString("en", { second: "2-digit" });
   let day = date.toLocaleString("en", { day: "2-digit" });
-  let month = date.toLocaleString("en", { month: "2-digit" });
+  let month = date.toLocaleString("en", { month: "long" });
   let year = date.toLocaleString("en", { year: "numeric" });
 
   document.getElementById("date")
-    .innerHTML = `${today}, ${hour}:${minute}:${second} | ${day}/${month}/${year}`;
+    .innerHTML = `${today} ${month} ${day}, ${hour}:${minute}:${second}`;
 
   setTimeout(showTime, 0)
 }
