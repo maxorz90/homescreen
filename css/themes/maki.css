@@ -1,0 +1,10 @@
+:root {
+  --background-color: #1e2030;
+  --text-color-primary: #cad3f5;
+  --text-color-secondary: #eed49f;
+  --link-color-hover: #ed8796;
+  --link-color-normal: #FD926C;
+  --title-color: #FC9b80;
+  --category-color: #38c1fc;
+  --image: url("../img/maki.jpg");
+}
