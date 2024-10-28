@@ -6,17 +6,13 @@ html {
 }
 
 body {
-  background-color: #1b1f30;
-  color: #Cbc2e0;
-  font-family: 'Fira Code', monospace;
+  background-color: var(--background-color);
+  color: var(--text-color-primary);
+  /* font-family: 'Fira Code', monospace; */
+  font-family: "Baloo 2", sans-serif;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   flex-wrap: wrap;
-}
-
-image,
-bookmarks {
-  flex: 1;
 }
 
 .hidden-on-small {
@@ -24,35 +20,48 @@ bookmarks {
 }
 
 a {
-  color: #6ad7eb;
+  color: var(--link-color-normal);
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
-  color: #c0caf5;
+  color: var(--link-color-hover);
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 62px;
   margin-top: 0px;
   margin-bottom: 0px;
+  margin-top: -18px;
 }
 
 h2 {
+  /* font-family: 'Fira Code', monospace; */
   text-decoration: bold;
-  font-size: 32px;
-  margin-bottom: 40px;
+  font-size: 38px;
+  margin-bottom: 30px;
+  margin-top: 0px;
 }
 
 ul {
   list-style: none;
-  margin-left: -40px;
+  margin-left: -23px;
+  margin-top: 0;
 }
 
-h1,
+li {
+  margin: 0px;
+}
+
+h1 {
+  color: var(--title-color);
+}
+
 div {
-  color: #ff9e64;
+  color: var(--category-color);
+  font-weight: 900;
+  font-size: 20px;
 }
 
 .grid-container {
@@ -75,22 +84,29 @@ img {
   object-fit: cover;
   margin-right: 4em;
   box-shadow: rgba(0, 0, 0, 0.20) 30px 30px 30px, rgba(0, 0, 0, 0.20) 0px 0px 30px 10px;
-  margin-bottom: 20px;
+  margin-bottom: 9px;
+  border-radius: 10px;
 }
 
 #date {
-  color: #c0caf5;
+  color: var(--text-color-secondary);
   max-width: 100%;
+  width: 490px;
   overflow-wrap: wrap;
   white-space: normal;
   overflow: visible;
   text-overflow: clip;
 }
 
-#image-source,
-#image-source a {
-  color: #c0caf5;
-  padding-top: 20px;
+.image img {
+  content: var(--image);
+}
+
+#image-source {
+  color: var(--text-color-secondary);
+  padding-top: 0px;
+  margin-left: -61px;
+  text-align: center;
 }
 
 @media (max-width: 600px) {

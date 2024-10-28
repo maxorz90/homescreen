@@ -5,20 +5,21 @@
   <title>Webzone Homepage</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/style.css" rel="stylesheet">
   <link href="img/favicon.png" rel="icon" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
+  <link href="css/style-iphone.css" rel="stylesheet" media="screen and (max-width:430px)">
+  <link href="css/style.css" rel="stylesheet" media="screen and (min-width:431px)">
 </head>
 
 <body>
+  <div id="cover"></div>
   <div class="image hidden-on-small">
-    <img src="img/2b.jpg" />
+    <img src="" />
     <br />
-    <span id="image-source">
-      Image source: <a href="https://www.deviantart.com/artgerm/art/2B-662254318">Artgerm</a>
-    </span>
+    <div id="image-source"></div>
   </div>
 
   <div class="bookmarks">
@@ -65,7 +66,7 @@
         <ul>
           <li><a href="https://bsky.app/profile/kicks0u.bsky.social">Kicks BSKY</a></li>
           <li><a href="https://www.twitch.tv/kicksagain">Kicks Twitch</a></li>
-          <li><a href="https://www.twitch.tv/chuutievt">Chuutie Twith</a></li>
+          <li><a href="https://www.twitch.tv/chuutievt">Chuutie Twitch</a></li>
         </ul>
       </div>
       <div>
@@ -78,7 +79,9 @@
 
     </nav>
   </div>
-  <script type="text/javascript" src="js/index.js"></script>
 </body>
+
+<script type="text/javascript" src="js/datetime.js"></script>
+<script type="text/javascript" src="js/theme-randomizer.js"></script>
 
 </html>

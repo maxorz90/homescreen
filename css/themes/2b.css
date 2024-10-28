@@ -1,0 +1,11 @@
+:root {
+  --background-color: #1b1f30;
+  --background-transparent-color: #161010a3;
+  --text-color-primary: #Cbc2e0;
+  --text-color-secondary: #c0caf5;
+  --link-color-hover: #c0caf5;
+  --link-color-normal: #6ad7eb;
+  --title-color: #ff9e64;
+  --category-color: #ff9e64;
+  --image: url("../img/2b.jpg");
+}
